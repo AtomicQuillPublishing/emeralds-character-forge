@@ -1,0 +1,5 @@
+remote_theme: pages-themes/slate@v0.2.0
+gem "github-pages", group: :jekyll_plugins
+title: Emerald's Character Forge
+description: A quick way to generate D&D characters
+show_downloads: True
