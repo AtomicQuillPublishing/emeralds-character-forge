@@ -1,5 +1,14 @@
 <p align="center"><img src="https://i.imgur.com/P6Q6RnD.png"></p>
 
+<br>
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Created_Using-HTML-057031?logo=html5&logoColor=ffffff" alt="Created Using HTML"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Created_Using-CSS-057031?logo=css3&logoColor=ffffff" alt="Created Using CSS"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Created_Using-JavaScript-057031?logo=JavaScript&logoColor=ffffff" alt="Created Using JavaScript"></a>
+</p>
+
+
 
 ## Overview
 This project is a web-based tool designed to assist Dungeons & Dragons (D&D) players in quickly generating random character details such as race, background, and ability scores. The tool provides a simple, user-friendly interface that allows users to pick random D&D races, backgrounds, and roll stats with modifiers, making character creation easier and faster for DMs and players alike.
