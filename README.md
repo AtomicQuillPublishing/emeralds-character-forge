@@ -14,9 +14,10 @@
 This project is a web-based tool designed to assist Dungeons & Dragons (D&D) players in quickly generating random character details such as race, background, and ability scores. The tool provides a simple, user-friendly interface that allows users to pick random D&D races, backgrounds, and roll stats with modifiers, making character creation easier and faster for DMs and players alike.
 
 ## Features
-- **Random Race Picker**: Choose from a variety of D&D 5e races.
+- **Random Species Picker**: Choose from a variety of D&D 5e species.
 - **Random Background Picker**: Select a random background for your character.
 - **Stat Roll**: Roll stats for your character using the standard method (d20 rolls and modifiers).
+- **Class Picker**: Select a random class.
 - **Responsive Design**: Optimized for mobile and desktop use.
 
 ## Technologies Used
@@ -29,9 +30,10 @@ This project is a web-based tool designed to assist Dungeons & Dragons (D&D) pla
 ## How to Use
 1. Open the project in a browser.
 2. Use the buttons on the page to:
-   - **Pick a Random Race**: A random D&D race is selected.
+   - **Pick a Random species**: A random D&D species is selected.
    - **Pick a Random Background**: A random D&D background is chosen.
    - **Roll Stats**: Random ability scores are generated for your character.
+   - **Pick a Random Class**: A random class is chosen
 3. Use the information provided to enhance your D&D character creation process.
 
 ## Support & Contributions
