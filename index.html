@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D&D Random Race, Background, and Stats Picker</title>
+  <title>D&D Random Species, Background, and Stats Picker</title>
   <!-- Include Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <!-- Include Alegreya SC font from Google Fonts -->
@@ -138,14 +138,16 @@
       <img src="https://i.imgur.com/n7pTTAL.png" alt="Title" class="title-image">
 
       <div>
-        <button onclick="pickRandomRace()"><span>Pick a Random Race</span></button>
+        <button onclick="pickRandomSpecies()"><span>Pick a Random Species</span></button>
         <button onclick="pickRandomBackground()"><span>Pick a Random Background</span></button>
         <button onclick="rollStats()"><span>Roll Stats</span></button>
+        <button onclick="pickRandomClass()"><span>Pick a Random Class</span></button>
       </div>
 
-      <div class="output" id="raceOutput">Race: <span id="race"></span></div>
+      <div class="output" id="speciesOutput">Species: <span id="species"></span></div>
       <div class="output" id="backgroundOutput">Background: <span id="background"></span></div>
       <div class="output" id="statsOutput">Stats: <span id="stats"></span></div>
+      <div class="output" id="classOutput">Class: <span id="class"></span></div>
     </div>
   </div>
 
@@ -156,8 +158,8 @@
   </div>
 
   <script>
-    // Define lists of D&D 5e races and backgrounds with their source books
-    const races = [
+    // Define lists of D&D 5e species, backgrounds, and classes with their source books
+    const species = [
       "Dragonborn (PHB)", "Dwarf (PHB)", "Elf (PHB)", "Gnome (PHB)", "Half-Elf (PHB)", 
       "Half-Orc (PHB)", "Halfling (PHB)", "Human (PHB)", "Tiefling (PHB)", "Aarakocra (EEPC)", 
       "Genasi (EEPC)", "Goliath (EEPC)", "Tabaxi (VGM)", "Firbolg (VGM)", "Triton (VGM)", 
@@ -174,10 +176,16 @@
       "Knight of the Order (SCAG)", "Mercenary Veteran (SCAG)", "Urban Bounty Hunter (SCAG)"
     ];
 
-    // Function to pick a random race
-    function pickRandomRace() {
-      const randomRace = races[Math.floor(Math.random() * races.length)];
-      document.getElementById("race").textContent = randomRace;
+    const classes = [
+      "Barbarian", "Bard", "Cleric", "Druid", "Fighter", 
+      "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", 
+      "Warlock", "Wizard"
+    ];
+
+    // Function to pick a random species
+    function pickRandomSpecies() {
+      const randomSpecies = species[Math.floor(Math.random() * species.length)];
+      document.getElementById("species").textContent = randomSpecies;
     }
 
     // Function to pick a random background
@@ -196,6 +204,12 @@
         stats.push(`${stat} (${modifierText})`);
       }
       document.getElementById("stats").textContent = stats.join(", ");
+    }
+
+    // Function to pick a random class
+    function pickRandomClass() {
+      const randomClass = classes[Math.floor(Math.random() * classes.length)];
+      document.getElementById("class").textContent = randomClass;
     }
   </script>
 
