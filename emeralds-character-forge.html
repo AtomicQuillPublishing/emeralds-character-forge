@@ -110,9 +110,27 @@
     .content {
       margin-top: 80px; /* Add margin to push the content below the navbar */
     }
+    /* Home Icon at the top left */
+    .home-icon {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      color: #fff; /* White icon color */
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .home-icon:hover {
+      color: #057031; /* Green color on hover */
+    }
   </style>
 </head>
 <body>
+
+  <!-- Home Icon -->
+  <a href="INSERT-HOME-PAGE-LINK" class="home-icon">
+    <i class="fa-solid fa-house"></i>
+  </a>
 
   <!-- Social Media Icons -->
   <div class="social-icons">
@@ -166,16 +184,15 @@
       "Bugbear (VGM)", "Goblin (VGM)", "Hobgoblin (VGM)", "Kenku (VGM)", "Kobold (VGM)", 
       "Lizardfolk (VGM)", "Orc (VGM)", "Yuan-ti Pureblood (VGM)"
     ];
-
     const backgrounds = [
       "Acolyte (PHB)", "Charlatan (PHB)", "Criminal (PHB)", "Entertainer (PHB)", 
-      "Folk Hero (PHB)", "Guild Artisan (PHB)", "Hermit (PHB)", "Noble (PHB)", 
-      "Outlander (PHB)", "Sage (PHB)", "Sailor (PHB)", "Soldier (PHB)", "Urchin (PHB)", 
-      "City Watch (SCAG)", "Clan Crafter (SCAG)", "Cloistered Scholar (SCAG)", 
-      "Courtier (SCAG)", "Faction Agent (SCAG)", "Far Traveler (SCAG)", "Inheritor (SCAG)", 
-      "Knight of the Order (SCAG)", "Mercenary Veteran (SCAG)", "Urban Bounty Hunter (SCAG)"
+      "Folk Hero (PHB)", "Guild Artisan (PHB)", "Hermit (PHB)", "Noble (PHB)", "Outlander (PHB)", 
+      "Sage (PHB)", "Sailor (PHB)", "Soldier (PHB)", "Urchin (PHB)", "Anthropologist (TOA)", 
+      "Archaeologist (TOA)", "Haunted One (COS)", "Knight (Retired) (PHB)", "City Watch (SCAG)", 
+      "Clan Crafter (SCAG)", "Cloistered Scholar (SCAG)", "Courtier (SCAG)", "Faction Agent (SCAG)", 
+      "Far Traveler (SCAG)", "Inheritor (SCAG)", "Knight of the Order (SCAG)", "Mercenary Veteran (SCAG)", 
+      "Urban Bounty Hunter (SCAG)"
     ];
-
     const classes = [
       "Barbarian", "Bard", "Cleric", "Druid", "Fighter", 
       "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", 
